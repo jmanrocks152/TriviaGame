@@ -11,3 +11,16 @@ class Trivia(object):
         self.failed = False
         self.wronganswer = 0
         self.colors = [white, white, white, white, white]
+
+        f = open(filename, "r")
+        trivia_data = f.readlines()
+        f.close()
+
+        for text_line in trivia_data:
+            self.data.append(text_line.strip())
+            self.total += 1
+
+        def show_question(self):
+            print_text(font1, 210, 5, )
+
+
